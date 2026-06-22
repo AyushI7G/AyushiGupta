@@ -248,7 +248,8 @@ html {
 }
 
 .modal{
-    display: none; position: fixed; z-index: 99999; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); overflow-y: auto; overflow-x: hidden;
+    display: none; position: fixed; z-index: 99999; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); 
+    overflow-y: auto; overflow-x: hidden;
 }
 
 .close{
@@ -333,132 +334,73 @@ html {
 }
 
 .social-btn{ 
-    width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; color: white; 
-    font-size: 55px; transition: 0.3s ease; background-color: rgb(65, 93, 39);
+    width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; 
+    color: white; font-size: 55px; transition: 0.3s ease; background-color: rgb(65, 93, 39);
 }
 
 .social-btn:hover{
     transform: translateY(-8px) scale(1.08);
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* For Resposive */
 
+.menu-toggle{
+    display:none; font-size:30px; cursor:pointer; color:white;
+}
 
-/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width:1480px){
 
-@media (max-width: 1024px) {
+    nav{
+        position: relative; height:auto; min-height:30px; padding:15px 20px; justify-content:flex-start; flex-direction:column;  
+        align-items:flex-start; margin:0; top:0; left:0; width:100%;
+    }
 
     .content{
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 20px;
+        margin:20px auto; padding:20px; max-width:100%;
+    }
+
+    .menu-toggle{
+        display:block; font-size:32px; color:white;
     }
 
     .menu{
-        gap: 25px;
-        font-size: 0.8rem;
+        display:none; flex-direction:column; width:100%; gap:15px; margin-top:15px; margin-left:0; text-align:left;
+    }
+
+    .menu.show{
+        display:flex;
+    }
+
+    body{
+        margin:0; padding:0;
+    }
+
+    .menu h1{
+        font-size:1.1rem; margin:0;
     }
 
     .about-container{
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 40px;
+        flex-direction:column; gap:30px; text-align:center;
     }
 
     .about-right{
-        flex: unset;
+        flex:none;
     }
 
     .about-right img{
-        width: 280px;
-        height: 320px;
-        margin-top: 30px;
-        margin-right: 0;
-    }
-
-    .education-content,
-    .experience-content{
-        width: auto;
-    }
-
-    .timeline-content{
-        width: auto;
-    }
-
-    .education-details{
-        flex-direction: column;
-    }
-
-    .projects-container,
-    .specializations-container,
-    .skills-container{
-        justify-content: center;
-    }
-}
-
-
-/* Mobile Phones */
-
-@media (max-width: 768px) {
-
-    nav{
-        height: auto;
-        padding: 10px 0;
-    }
-
-    .menu{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin-left: 0;
-    }
-
-    .content{
-        margin-top: 130px;
-        padding: 10px;
-    }
-
-    .name{
-        font-size: 2.2rem;
-        text-align: center;
+        width:250px; height:300px; margin:0;
     }
 
     .about-text{
-        font-size: 1rem;
-        text-indent: 20px;
+        font-size:1rem; text-indent:0; line-height:1.6;
     }
 
-    .about-right img{
-        width: 220px;
-        height: 260px;
+    .name{
+        font-size:2rem;
     }
 
-    .project-card,
-    .specialization-card{
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .skills-card{
-        width: 100%;
-        height: auto;
-    }
-
-    .education-content,
-    .experience-content,
-    .timeline-content{
-        width: auto;
-        padding: 15px;
-    }
-
-    .social-links{
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 25px;
-    }
-
-    .social-btn{
-        width: 80px;
-        height: 80px;
-        font-size: 40px;
+    .content{
+        margin-left:20px; margin-right:20px; padding:20px;
     }
 }

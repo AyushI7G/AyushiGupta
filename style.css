@@ -340,3 +340,125 @@ html {
 .social-btn:hover{
     transform: translateY(-8px) scale(1.08);
 }
+
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 1024px) {
+
+    .content{
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .menu{
+        gap: 25px;
+        font-size: 0.8rem;
+    }
+
+    .about-container{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .about-right{
+        flex: unset;
+    }
+
+    .about-right img{
+        width: 280px;
+        height: 320px;
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    .education-content,
+    .experience-content{
+        width: auto;
+    }
+
+    .timeline-content{
+        width: auto;
+    }
+
+    .education-details{
+        flex-direction: column;
+    }
+
+    .projects-container,
+    .specializations-container,
+    .skills-container{
+        justify-content: center;
+    }
+}
+
+
+/* Mobile Phones */
+
+@media (max-width: 768px) {
+
+    nav{
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-left: 0;
+    }
+
+    .content{
+        margin-top: 130px;
+        padding: 10px;
+    }
+
+    .name{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .about-text{
+        font-size: 1rem;
+        text-indent: 20px;
+    }
+
+    .about-right img{
+        width: 220px;
+        height: 260px;
+    }
+
+    .project-card,
+    .specialization-card{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .skills-card{
+        width: 100%;
+        height: auto;
+    }
+
+    .education-content,
+    .experience-content,
+    .timeline-content{
+        width: auto;
+        padding: 15px;
+    }
+
+    .social-links{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .social-btn{
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+    }
+}

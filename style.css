@@ -230,6 +230,68 @@ html {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* For resposive projects page */
+
+
+@media (max-width:1120px){
+
+    .projects-container{
+        display:flex; flex-wrap:wrap; justify-content:flex-start; gap:30px;
+    }
+
+    .project-card{
+        width:100%; max-width:450px; box-sizing:border-box;
+    }
+
+    .project-card img{
+        width:100%; height:auto; aspect-ratio:16/9; object-fit:cover;
+    }
+
+    .project-card h2{
+        font-size:1.2rem; text-align:left;
+    }
+
+    .project-card p{
+        font-size:0.95rem; text-align:left;
+    }
+
+    .project-card h3{
+        font-size:0.95rem; text-align:left; line-height:1.5;
+    }
+
+    .project-card h4{
+        font-size:0.9rem;
+    }
+}
+
+@media (min-width:532px) and (max-width:1012px){
+
+    .projects-container{
+        display:block;
+    }
+
+    .project-card{
+        width:95% !important; max-width:none !important; margin:0 auto 30px auto; box-sizing:border-box;
+    }
+}
+
+@media (min-width:1018px) and (max-width:1384px){
+
+    .projects-container{
+        display:flex; flex-wrap:wrap; justify-content:space-between; gap:30px;
+    }
+
+    .project-card-link{
+        width:48% 
+    }
+
+    .project-card{
+        width:100%; box-sizing:border-box;
+    }
+    
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Style for the skills card */
 
 .skills-card {

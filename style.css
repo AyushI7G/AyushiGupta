@@ -321,6 +321,32 @@ html {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Skills resposive */
+
+@media (max-width:1105px){
+
+    .skills-container{
+        gap:15px;
+    }
+
+    .skills-card{
+        padding:10px 8px; gap:4px;
+    }
+
+    .skills-card h2{
+        font-size:1.1rem;
+    }
+
+    .skills-card i{
+        font-size:20px;
+    }
+
+    .skill-icon{
+        width:18px; height:18px;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Style for the specializations card */
 
 .specialization-card{
@@ -377,10 +403,7 @@ html {
 }
 
 .about-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 110px;
+    display: flex; justify-content: space-between; align-items: center; gap: 110px;
 }
 
 .about-left{

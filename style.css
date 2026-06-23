@@ -217,8 +217,7 @@ html {
 }
 
 .project-card-link{
-    text-decoration: none;
-    color: inherit;
+    text-decoration: none; color: inherit;
 }
 
 .project-card h4{

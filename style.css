@@ -424,7 +424,7 @@ html {
     }
 
     .about-container{
-        flex-direction:column; gap:30px; text-align:center;
+        flex-direction:column; gap:30px; text-align:justify;
     }
 
     .about-right{

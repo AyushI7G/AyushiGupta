@@ -536,3 +536,8 @@ html {
         margin-left:20px; margin-right:20px; padding:20px;
     }
 }
+
+
+*{
+    outline:1px solid red;
+}

@@ -459,6 +459,64 @@ html {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Style Education resposive */
+
+@media (max-width:1105px){
+
+    .education-timeline{
+        padding-left:20px; margin-top:20px; border-left:3px solid rgb(65, 93, 39);
+    }
+
+    .education-item{
+        margin-bottom:35px;
+    }
+
+    .education-content{
+        width:100%; max-width:100%; padding:15px; box-sizing:border-box;
+    }
+
+    .education-details{
+        display:flex; flex-direction:column; gap:20px; align-items:center;
+    }
+
+    .education-text{
+        width:100%;
+    }
+
+    .education-text h2{
+        font-size:1.1rem; line-height:1.4; text-decoration-thickness:2px; text-underline-offset:4px;
+    }
+
+    .education-text h3{
+        font-size:0.9rem; line-height:1.5;
+    }
+
+    .education-image{
+        width:100%;
+    }
+
+    .education-image img{
+        width:220px; height:auto;
+    }
+
+    .education-image-caption{
+        font-size:0.85rem;
+    }
+
+    .education-image-caption a{
+        font-size:0.8rem;
+    }
+
+    .education-item:hover .education-content{
+        transform:none;
+    }
+
+    .education-item:hover .roadmap-point{
+        transform:rotate(225deg);
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Style for the Contact Page */
 
 .social-links{

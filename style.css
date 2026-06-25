@@ -367,7 +367,7 @@ html {
 }
 
 .specialization-card h2{
-    color: rgb(65, 93, 39); font-size: 1.4rem; text-align: justify; margin-top: 7px;
+    color: rgb(65, 93, 39); font-size: 1.4rem; text-align: left; margin-top: 7px;
 }
 
 .specialization-card p{
